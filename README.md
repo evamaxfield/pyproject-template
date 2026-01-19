@@ -7,7 +7,7 @@ This is @evamaxfield's personal cookiecutter template for quickly spinning up ne
 ## Quickstart
 
 1. `pip install cookiecutter`
-2. `cookiecutter gh:evamaxfield/cookiecutter-py-package`
+2. `cookiecutter gh:evamaxfield/pyproject-template`
 3. `cd {{ cookiecutter.project_slug }}`
 4. `git init`
 5. `just install`
