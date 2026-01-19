@@ -1,0 +1,12 @@
+{
+    "author_name": "Jane Doe",
+    "author_email": "jane@website.com",
+    "hosting_github_username_or_org": "JaneCodes",
+    "project_name": "Python Boilerplate",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-')}}",
+    "python_slug": "{{ cookiecutter.project_slug.replace('-', '_') }}",
+    "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    "_copy_without_render": [
+        "Justfile"
+    ]
+  }
