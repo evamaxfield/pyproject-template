@@ -15,13 +15,13 @@ repos:
   #   hooks:
   #     - id: mypy
 
-  - repo: https://github.com/NSPBot911/ty-pre-commit
-    rev: v0.0.12
+  - repo: local
     hooks:
-      # Run the linter.
       - id: ty-check
-        # additional_dependencies:
-        #   - "types-requests"
+        name: ty check
+        entry: ty check
+        language: system
+        types: [python]
 
   # Notebooks
   - repo: https://github.com/nbQA-dev/nbQA
