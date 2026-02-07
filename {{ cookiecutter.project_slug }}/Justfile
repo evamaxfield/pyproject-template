@@ -25,9 +25,11 @@ install:
 	pip install uv
 	uv pip install -e ".[lint,modeling]"
 
-# lint, format, and check all files
+# run linting
 lint:
-	prek run --all-files
+	ruff check . --fix
+	ruff format . --fix
+	ty check
 
 ###############################################################################
 # Release and versioning
@@ -47,5 +49,5 @@ release:
 # update this repo using latest cookiecutter
 update-from-cookiecutter:
 	pip install cookiecutter
-	cookiecutter gh:evamaxfield/evamaxfield/pyproject-template --config-file .cookiecutter.yaml --no-input --overwrite-if-exists --output-dir ..
+	cookiecutter gh:evamaxfield/pyproject-template --config-file .cookiecutter.yaml --no-input --overwrite-if-exists --output-dir ..
 
